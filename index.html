@@ -1,1 +1,396 @@
-Museum Aksakov
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровой музей С.Т. Аксакова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Playfair+Display:wght@500;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body bg-gray-50">
+    <header id="header" class="sticky top-0 z-50"></header>
+
+    <main class="container mx-auto px-4 pb-8">
+        <section id="hero" class="parallax-section">
+            <div class="parallax-bg"></div>
+            <div class="overlay"></div>
+            <div class="parallax-gradient"></div>
+            <div class="relative z-10 h-full flex items-center justify-center text-center">
+                <div>
+                    <h1 class="text-5xl md:text-7xl font-heading mb-6 text-white">Цифровой музей</h1>
+                    <h2 class="text-4xl md:text-6xl font-heading text-gold">Сергея Тимофеевича Аксакова</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="life" class="min-h-screen py-20">
+            <h2 class="text-4xl font-heading mb-12 text-center">Жизнь Аксакова</h2>
+
+            <div class="max-w-md mx-auto mb-16 text-center">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/61/Portrait_of_Sergey_Aksakov_by_Kramskoy.jpg" 
+                    alt="Портрет С.Т. Аксакова работы И. Крамского (1878)"
+                    class="rounded-lg shadow-xl mx-auto w-full h-auto max-h-96 object-cover"
+                >
+                <p class="mt-2 text-gray-600 italic">Портрет работы И. Крамского, 1878</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-heading mb-4">Детство и юность</h3>
+                    <p class="mb-4">Родился 20 сентября 1791 года в Уфе в дворянской семье. Детство провёл в родовом имении Ново-Аксаково.</p>
+                    <p>Учился в Казанской гимназии, затем в Казанском университете, но не окончил его.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-heading mb-4">Творческий путь</h3>
+                    <p class="mb-4">Первые литературные опыты - стихи и театральные рецензии. Известность приобрёл как автор книг о рыбалке и охоте.</p>
+                    <p>Вершина творчества - автобиографическая трилогия: "Семейная хроника", "Детские годы Багрова-внука", "Воспоминания".</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-heading mb-4">Семья и окружение</h3>
+                    <p class="mb-4">Был женат на Ольге Семёновне Заплатиной, имел 10 детей. Его сыновья Константин и Иван стали известными славянофилами.</p>
+                    <p>Дружил с Гоголем, Тургеневым, Тютчевым.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <h3 class="text-2xl font-heading mb-4">Основные даты</h3>
+                <ul class="space-y-4">
+                    <li><strong>1791</strong> - Родился в Уфе</li>
+                    <li><strong>1805</strong> - Поступил в Казанскую гимназию</li>
+                    <li><strong>1807</strong> - Начал учёбу в Казанском университете</li>
+                    <li><strong>1816</strong> - Женитьба на Ольге Заплатиной</li>
+                    <li><strong>1847</strong> - Публикация "Записок об уженье рыбы"</li>
+                    <li><strong>1856</strong> - Выход "Семейной хроники"</li>
+                    <li><strong>1859</strong> - Скончался в Москве</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="space" class="min-h-screen py-20 bg-blue-900 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-heading mb-12 text-center">Космическое наследие</h2>
+                
+                <div class="max-w-4xl mx-auto mb-12 space-y-6">
+                    <h3 class="text-2xl font-heading mb-4">Почему кратер назван в честь писателя?</h3>
+                    <p>Его название было принято Международным астрономическим союзом (IAU) 24 апреля 2012 года. Аксаков назван в честь русского писателя Сергея Аксакова, который жил с 1791 по 1859 год н.э.</p>
+                    <p>Кратер Аксакова - один из 110 пиковых кольцевых бассейнов на Меркурии. На основе изучения научной литературы заметили, что остроконечный кратер Аксакова наглядно показывает, что особо заметно кольцо центрального пика, а яркие пятна - это впадины.</p>
+                </div>
+
+                <div class="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <a href="assets/images/c1.png" data-lightbox="space-gallery" data-title="Общий вид кратера Аксакова (NASA)" class="gallery-item bg-blue-800 p-4 rounded-lg hover:shadow-xl transition-shadow">
+                        <img src="assets/images/c1.png" alt="Общий вид кратера Аксакова" class="w-full h-64 object-cover rounded-md mb-2">
+                        <p class="text-center text-blue-200">Общий вид кратера (NASA)</p>
+                    </a>
+                    
+                    <a href="assets/images/c2.jpg" data-lightbox="space-gallery" data-title="Бассейн Аксакова" class="gallery-item bg-blue-800 p-4 rounded-lg hover:shadow-xl transition-shadow">
+                        <img src="assets/images/c2.jpg" alt="Бассейн Аксакова" class="w-full h-64 object-cover rounded-md mb-2">
+                        <p class="text-center text-blue-200">Бассейн Аксакова</p>
+                    </a>
+                    
+                    <a href="assets/images/c3.png" data-lightbox="space-gallery" data-title="Четырехугольник Виктории" class="gallery-item bg-blue-800 p-4 rounded-lg hover:shadow-xl transition-shadow">
+                        <img src="assets/images/c3.png" alt="Четырехугольник Виктории" class="w-full h-64 object-cover rounded-md mb-2">
+                        <p class="text-center text-blue-200">Четырехугольник Виктории</p>
+                    </a>
+                    
+                    <a href="assets/images/c4.png" data-lightbox="space-gallery" data-title="Расположение кратера Аксакова" class="gallery-item bg-blue-800 p-4 rounded-lg hover:shadow-xl transition-shadow">
+                        <img src="assets/images/c4.png" alt="Расположение кратера" class="w-full h-64 object-cover rounded-md mb-2">
+                        <p class="text-center text-blue-200">Расположение кратера</p>
+                    </a>
+                    
+                    <a href="assets/images/c5.png" data-lightbox="space-gallery" data-title="Кольцо центрального пика" class="gallery-item bg-blue-800 p-4 rounded-lg hover:shadow-xl transition-shadow">
+                        <img src="assets/images/c5.png" alt="Кольцо центрального пика" class="w-full h-64 object-cover rounded-md mb-2">
+                        <p class="text-center text-blue-200">Кольцо центрального пика</p>
+                    </a>
+                    
+                    <a href="assets/images/c6.png" data-lightbox="space-gallery" data-title="Впадины внутри 30-километрового кратера" class="gallery-item bg-blue-800 p-4 rounded-lg hover:shadow-xl transition-shadow">
+                        <img src="assets/images/c6.png" alt="Впадины внутри кратера" class="w-full h-64 object-cover rounded-md mb-2">
+                        <p class="text-center text-blue-200">Впадины внутри кратера</p>
+                    </a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-blue-800 p-6 rounded-lg">
+                        <h4 class="text-xl font-heading mb-4 text-center">Основные сведения о кратере</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <tbody class="divide-y divide-blue-700">
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Дата получения</td>
+                                        <td class="py-2 px-4">20 января 2015 г.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Расположение</td>
+                                        <td class="py-2 px-4">Четырехугольник Виктории, Меркурий</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Диаметр</td>
+                                        <td class="py-2 px-4">173.6 км (108 миль)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Космический корабль</td>
+                                        <td class="py-2 px-4">MESSENGER</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-800 p-6 rounded-lg">
+                        <h4 class="text-xl font-heading mb-4 text-center">Дополнительные данные</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <tbody class="divide-y divide-blue-700">
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Дата получения</td>
+                                        <td class="py-2 px-4">12 февраля 2013 г.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Космический корабль</td>
+                                        <td class="py-2 px-4">MESSENGER</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Произведено</td>
+                                        <td class="py-2 px-4">Университет Джонса Хопкинса</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4 font-semibold">Диаметр</td>
+                                        <td class="py-2 px-4">173 км</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <h3 class="text-2xl font-heading mb-4">Кольцо пиков</h3>
+                    <p>Бассейн Аксакова или впадина Аксакова были названы в 2012 году и имеет заметное кольцо пиков, в котором расположены многочисленные впадины. Большая часть его пикового кольца отсутствует, однако она была разрушена при образовании кратера на этом изображении. Но у этого кратера есть свои интересные особенности, в том числе обвалы стен и впадины на гладком дне.</p>
+                    
+                    <h3 class="text-2xl font-heading mb-4">Научные наблюдения</h3>
+                    <p>Это изображение было получено в результате целенаправленного наблюдения с высоким разрешением. Целевые наблюдения представляют собой изображения небольшой области на поверхности Меркурия с разрешением, намного превышающим базовую морфологическую карту с разрешением 200 метров на пиксель. Невозможно охватить всю поверхность Меркурия с таким высоким разрешением, но обычно каждую неделю в этом режиме фотографируются несколько областей, представляющих большой научный интерес.</p>
+                    
+                    <p class="text-blue-200">Впадины присутствуют вдоль частей пикового кольца и внутри безымянного 30-километрового кратера внутри.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-heading mb-12 text-center text-gray-800">Галерея</h2>
+                
+                <!-- Галерея с 2 колонками -->
+                <div class="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+                    <!-- Карточка 1 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g1.jpg" data-lightbox="gallery" data-title="Подпись к фото 1">
+                            <img src="assets/images/g1.jpg" alt="Описание 1" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Мемориальный дом-музей</p>
+                    </div>
+                    
+                    <!-- Карточка 2 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g2.jpg" data-lightbox="gallery" data-title="Подпись к фото 2">
+                            <img src="assets/images/g2.jpg" alt="Описание 2" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Усадьба Аксакова в Уфе</p>
+                    </div>
+                    
+                    <!-- Карточка 3 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g3.jpg" data-lightbox="gallery" data-title="Подпись к фото 3">
+                            <img src="assets/images/g3.jpg" alt="Описание 3" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Здание Казанского университета начала 19 века</p>
+                    </div>
+                    
+                    <!-- Карточка 4 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g4.jpg" data-lightbox="gallery" data-title="Подпись к фото 4">
+                            <img src="assets/images/g4.jpg" alt="Описание 4" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Первая изданная книга</p>
+                    </div>
+                    
+                    <!-- Карточка 5 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g5.jpg" data-lightbox="gallery" data-title="Подпись к фото 5">
+                            <img src="assets/images/g5.jpg" alt="Описание 5" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Музей семьи Аксаковых </p>
+                    </div>
+                    
+                    <!-- Карточка 6 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g6.jpg" data-lightbox="gallery" data-title="Подпись к фото 6">
+                            <img src="assets/images/g6.jpg" alt="Описание 6" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Музей семьи Аксаковых</p>
+                    </div>
+                    
+                    <!-- Карточка 7 -->
+                    <div class="gallery-card group">
+                        <a href="assets/images/g7.jpg" data-lightbox="gallery" data-title="Подпись к фото 7">
+                            <img src="assets/images/g7.jpg" alt="Описание 7" 
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-102">
+                        </a>
+                        <p class="mt-2 text-center text-gray-600 font-serif">Памятник Сергею Аксакову-город Москва</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-blue-900 text-white py-8"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': 100,
+            'albumLabel': "Фото %1 из %2",
+            'disableScrolling': true,
+            'fadeDuration': 300,
+            'imageFadeDuration': 300
+        });
+
+        // Header content
+        const header = document.getElementById('header');
+        header.innerHTML = `
+            <div class="header-container w-full py-4 px-6">
+                <div class="container mx-auto flex justify-between items-center">
+                    <a href="#" class="logo font-logo text-2xl">Цифровой музей Аксакова</a>
+                    
+                    <nav class="hidden md:block">
+                        <ul class="flex space-x-8">
+                            <li><a href="#life" class="nav-link">Жизнь Аксакова</a></li>
+                            <li><a href="#space" class="nav-link">Космическое наследие</a></li>
+                            <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="hamburger md:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu container mx-auto px-6 md:hidden">
+                    <ul class="py-4 space-y-4">
+                        <li><a href="#life" class="nav-link block">Жизнь Аксакова</a></li>
+                        <li><a href="#space" class="nav-link block">Космическое наследие</a></li>
+                        <li><a href="#gallery" class="nav-link block">Галерея</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
+
+        // Footer content
+        const footer = document.getElementById('footer');
+        footer.innerHTML = `
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                    <img src="assets/logo/logo-sign.png" alt="УУНИТ" class="footer-logo mb-4 md:mb-0">
+                    
+                    <div class="text-center md:text-right">
+                        <h3 class="text-xl font-heading mb-2">Авторы проекта</h3>
+                        <div class="authors-grid">
+                            <div>Сакаева К.Р.</div>
+                            <div>Салимов Д.В.</div>
+                            <div>Имамудинов А.Р.</div>
+                            <div>Мещеряков А.С.</div>
+                            <div>Халиуллин А.М.</div>
+                            <div>Гиззатуллина А.Н.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-blue-700 pt-4 text-center">
+                    <p>&copy; Цифровой музей С.Т. Аксакова, 2025</p>
+                </div>
+            </div>
+        `;
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 768) {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect
+        let lastScrollPosition = 0;
+        let ticking = false;
+
+        window.addEventListener('scroll', function() {
+            lastScrollPosition = window.scrollY;
+            
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    updateParallax(lastScrollPosition);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        function updateParallax(scrollPos) {
+            const parallaxSection = document.querySelector('.parallax-section');
+            if (!parallaxSection) return;
+            
+            const parallaxSpeed = 0.3;
+            const offset = scrollPos * parallaxSpeed;
+            parallaxSection.querySelector('.parallax-bg').style.transform = `translateY(${offset}px)`;
+            
+            const opacity = 1 - Math.min(scrollPos / 300, 0.6);
+            parallaxSection.querySelector('.overlay').style.opacity = opacity;
+        }
+    </script>
+</body>
+</html>

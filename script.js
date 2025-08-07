@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul class="flex space-x-8">
                         <li><a href="#life" class="nav-link">Жизнь Аксакова</a></li>
                         <li><a href="#space" class="nav-link">Космическое наследие</a></li>
+                        <li><a href="#three-d-gallery" class="nav-link">3D-галерея</a></li>
                         <li><a href="#gallery" class="nav-link">Галерея</a></li>
                     </ul>
                 </nav>
@@ -122,5 +123,4 @@ function updateParallax(scrollPos) {
     // Эффект затемнения при скролле
     const opacity = 1 - Math.min(scrollPos / 300, 0.6);
     parallaxSection.querySelector('.overlay').style.opacity = opacity;
-
 }

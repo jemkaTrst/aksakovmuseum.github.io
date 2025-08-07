@@ -430,3 +430,169 @@ html {
 .group-hover\:scale-102:hover {
     transform: scale(1.02);
 }
+
+/* 3D-Галерея */
+#three-d-gallery {
+  background: #111827;
+}
+
+.three-d-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .three-d-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.three-d-card {
+  perspective: 1000px;
+  height: 16rem;
+}
+
+.three-d-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.three-d-card:hover .three-d-card-inner {
+  transform: rotateY(15deg);
+}
+
+.three-d-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.three-d-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.three-d-card:hover .three-d-overlay {
+  opacity: 1;
+}
+
+.three-d-caption {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Обычная галерея */
+.standard-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+/* Общая обертка */
+.parallax-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Фоновое изображение с параллаксом */
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1454789548928-9efd52dc4031?auto=format&fit=crop&w=1480&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+/* Градиент сверху — от белого к прозрачному */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.4) 30%, rgba(255, 255, 255, 0.1) 45%, rgba(255, 255, 255, 0) 60%);
+  z-index: 2;
+}
+
+/* Контент по центру */
+.parallax-content {
+  position: relative;
+  z-index: 3;
+  color: #f9fafb;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.parallax-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.parallax-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.parallax-content button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: 2px solid #f9fafb;
+  background-color: transparent;
+  color: #f9fafb;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.parallax-content button:hover {
+  background-color: #f9fafb;
+  color: black;
+}
+
+.pb-8 {
+    padding-bottom: 0rem;
+}
